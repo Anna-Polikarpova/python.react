@@ -1,0 +1,20 @@
+{%extends 'base.html'%}
+{%block title%}
+{{item.name}}
+{%endblock%}
+{%block content%}
+<div class="">
+    <p class="text-centre" >{{item.name}} </p>
+    <p class="text-centre" >{{item.price}} Pуб.</p>
+    <p class="text-centre" >{{item.description}}</p>
+    {% if item.id == 1 %}
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM06zzZzNDxoyjfMrb6vxnRqw63Jv4JUgqJSK8_yrPTBJELJNPMw"/>
+    {% elif item.id == 2 %}
+    <img src="http://mschistota.ru/wp-content/uploads/2016/01/natochit-nozhnicy-v-domashnix-usloviyax_4.jpg" width="225" height="225"/>
+    {% else %}
+    <img src="https://www.informat.ru/upload/iblock/085/0854126578c5ff2f076a112a3f38f22f.jpg" width="225" height="225"/>
+    {% endif %}
+    </a>
+</div>
+
+{%endblock%}
